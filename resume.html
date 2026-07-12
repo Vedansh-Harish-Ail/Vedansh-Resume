@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        :root {
+            --font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+            --text-color: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            background-color: #f1f5f9;
+            line-height: 1.35;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 820px;
+            padding: 0.55in;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        /* Typography matching LaTeX article class 10pt */
+        h1 {
+            font-size: 17pt;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        h2 {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 0.8px solid #000000;
+            padding-bottom: 1px;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        h3 {
+            font-size: 10pt;
+            font-weight: bold;
+            margin-top: 8px;
+            margin-bottom: 2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        /* Contact Details */
+        h1 + p {
+            text-align: center;
+            font-size: 10pt;
+            margin-bottom: 12px;
+            word-spacing: 1px;
+        }
+
+        h1 + p a {
+            color: #0000ee; /* LaTeX URL blue fallback */
+            text-decoration: underline;
+        }
+
+        a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        hr {
+            display: none;
+        }
+
+        p {
+            font-size: 10pt;
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 14px;
+            margin-bottom: 4px;
+        }
+
+        li {
+            font-size: 10pt;
+            margin-bottom: 2px;
+            text-align: justify;
+        }
+
+        /* Specific styles for skills/certifications lists */
+        h2 + ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 4px;
+        }
+
+        h2 + ul > li {
+            margin-bottom: 3px;
+        }
+
+        /* Horizontal Layout classes */
+        .company {
+            font-weight: bold;
+        }
+
+        .right {
+            font-weight: normal;
+        }
+
+        .right a {
+            font-weight: normal;
+        }
+
+        .right-side {
+            display: flex;
+            gap: 25px;
+            font-weight: bold;
+        }
+
+        .date {
+            font-weight: bold;
+        }
+
+        /* Avoid split blocks */
+        .avoid-break {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        /* Print CSS Optimization */
+        @media print {
+            body {
+                background: #ffffff;
+                padding: 0;
+                display: block;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+
+            /* Prevent page breaks inside sections and list items */
+            h2, h3 {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+
+            li, p {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: 0.55in;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>Vedansh Harish Ail</h1>
+<p>Mangalore, Karnataka | +91 6282277490 | <a href="mailto:ailvedansh@gmail.com">ailvedansh@gmail.com</a> | <a href="https://vedansh-portfolio-beta.vercel.app/">Portfolio</a> | <a href="https://github.com/Vedansh-Harish-Ail">GitHub</a> | <a href="https://linkedin.com/in/vedansh-harish-ail">LinkedIn</a></p>
+<hr>
+<h2>Professional Summary</h2>
+<p>Software Engineer with experience in Full Stack Development, Backend Engineering, QA validation, API integration, SQL, and web application development. Skilled in building scalable applications using Python, Flask, React, JavaScript, and PostgreSQL while applying software engineering principles, testing methodologies, and clean architecture. Strong foundation in Data Structures, Object-Oriented Programming, REST APIs, databases, debugging, and software quality practices.</p>
+<h2>Technical Skills</h2>
+<ul>
+<li><strong>Languages:</strong> Python, Java, JavaScript, SQL, HTML5, CSS3</li>
+<li><strong>Frameworks:</strong> Flask, FastAPI, React, React Native (Basics), Tailwind CSS</li>
+<li><strong>Databases:</strong> PostgreSQL, SQLite</li>
+<li><strong>Tools:</strong> Git, GitHub, VS Code, Postman, Jira, Jenkins, PyCharm</li>
+<li><strong>Concepts:</strong> REST APIs, OOP, Data Structures, Algorithms, RBAC, Authentication, Software Testing, QA, Agile, Responsive Design</li>
+</ul>
+<h2>Experience</h2>
+<div class="avoid-break"><h3><strong>Software Developer Intern</strong> <span class="company">PrimeSophic Technologies</span></h3>
+<ul>
+<li>Built responsive web applications using React, Flask, and PostgreSQL.</li>
+<li>Designed REST APIs, optimized SQL queries, and integrated frontend with backend services.</li>
+<li>Improved application usability through reusable components and responsive UI implementation.</li>
+<li>Collaborated using Git-based development workflows and Agile practices.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>Web Development Intern</strong> <span class="right-side"><span class="date">Oct 2025 – Nov 2025</span><span class="company">Oasis Infobyte</span></span></h3>
+<ul>
+<li>Developed responsive web interfaces using HTML, CSS, and JavaScript.</li>
+<li>Improved maintainability through modular code structure and frontend optimization.</li>
+<li>Automated repetitive testing tasks using Python scripts.</li>
+</ul></div>
+<h2>Selected Projects</h2>
+<div class="avoid-break"><h3><strong>AgroChain – Hybrid Web2/Web3 Agricultural Supply Chain Platform</strong> <span class="right"><a href="https://agrochain-i6zh.onrender.com/">Live Demo</a></span></h3>
+<ul>
+<li>Engineered a hybrid blockchain-relational architecture.</li>
+<li>Architected a hybrid Web2/Web3 platform using React, Flask, Solidity, Hardhat, Ethers.js, and PostgreSQL/SQLite for blockchain-enabled agricultural traceability.</li>
+<li>Developed secure REST APIs with JWT authentication, RBAC, dual OTP verification, and MetaMask signature-based wallet authentication.</li>
+<li>Designed and deployed Solidity smart contracts for crop traceability, decentralized ratings, and peer-to-peer microfinance using OpenZeppelin.</li>
+<li>Implemented QR-based crop verification, geographic verifier allocation, PDF certificate generation, and dashboards supporting six stakeholder roles.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>Meri Panchayat – Public Issue Reporting Portal</strong> <span class="right"><a href="https://public-issue-reporting-portal.vercel.app/">Live Demo</a></span></h3>
+<ul>
+<li>Developed a full-stack public grievance management platform using Python, Flask, SQLite, HTML, CSS, and JavaScript for citizen issue reporting and administration.</li>
+<li>Implemented secure authentication with Email OTP verification, password hashing, session management, and Role-Based Access Control (RBAC).</li>
+<li>Designed complaint lifecycle workflows including issue reporting, image uploads, tracking IDs, status management, multilingual support, and administrator dashboards.</li>
+<li>Built relational database models, CRUD operations, analytics dashboards, and notice management modules to streamline grievance resolution and improve workflow efficiency.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>A² Kitchen – Smart Recipe Generator</strong> <span class="right"><a href="https://vedansh-harish-ail.github.io/Smart-Recipe-Generator/">Live Demo</a></span></h3>
+<ul>
+<li>Developed a responsive recipe recommendation platform using JavaScript (ES6+), HTML5, CSS3, and the Spoonacular API to generate recipes based on user-selected ingredients.</li>
+<li>Engineered an offline-first architecture with a fallback database of 60+ recipes, API error handling, and automatic failover for uninterrupted user experience.</li>
+<li>Implemented community recipe contributions, localStorage-based data persistence, hidden administrator controls, and CSV/JSON data export functionality.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>ResumeCraft – Privacy-First ATS Resume Builder</strong> <span class="right"><a href="https://vedansh-harish-ail.github.io/resume-builder/">Live Demo</a></span></h3>
+<ul>
+<li>Developed a privacy-first resume builder with live preview, offline PDF parsing using Mozilla PDF.js, and ATS-compliant Harvard formatting for instant PDF export.</li>
+<li>Implemented optional AI-powered resume enhancement using OpenAI, drag-and-drop section reordering, dynamic templates, and localStorage-based persistence.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>Role of Artificial Intelligence in Enhancing Academic Success</strong> <span class="right"><a href="https://medium.com/@ailvedansh/role-of-artificial-intelligence-in-enhancing-academic-success-and-student-life-54f3fe3da8e2">View</a></span></h3>
+<ul>
+<li>Led a quantitative study of 250+ students and analyzed AI adoption trends using Python to evaluate its impact on academic performance and student well-being.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>News Website Scraper</strong> <span class="right"><a href="https://news-scraper-q3y3.onrender.com/">Live Demo</a></span></h3>
+<ul>
+<li>Developed a Python web scraping application using Requests, BeautifulSoup, and Pandas with sentiment analysis and CSV/Excel data export.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>Food Delivery Time Prediction</strong></h3>
+<ul>
+<li>Built a machine learning model in Python using regression algorithms, feature engineering, and model evaluation to predict food delivery times.</li>
+</ul></div>
+<div class="avoid-break"><h3><strong>WhatsApp Chat Analytics</strong> <span class="right"><a href="https://vedansh-harish-ail.github.io/WhatsApp-App-wrapper/">Live Demo</a></span></h3>
+<ul>
+<li>Developed a Web analytics application that visualizes messaging trends, user activity, emoji usage, and conversation statistics through an interactive dashboard.</li>
+</ul></div>
+<h2>Education</h2>
+<div class="avoid-break"><h3><strong>Master of Computer Applications (MCA)</strong> <span class="company">St. Agnes College (Autonomous)</span></h3>
+<p>CGPA: 7.93</p></div>
+<div class="avoid-break"><h3><strong>Bachelor of Computer Applications (BCA)</strong> <span class="company">Dr. P.D.P. P.S.P Government First Grade College</span></h3>
+<p>CGPA: 7.87</p></div>
+<h2>Certifications</h2>
+<p>AWS Solutions Architecture Job Simulation • Electronic Arts Software Engineering Job Simulation Data Structures &amp; Algorithms Training • Internet of Things Workshop • Advanced Microsoft Excel</p>
+<!-- trigger -->
+
+    </div>
+</body>
+</html>
